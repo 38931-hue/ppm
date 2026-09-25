@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coleção Hot Wheels</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🏁 Minha Coleção <span>Hot Wheels</span></h1>
+    <p class="subtitle">Miniaturas cadastradas na coleção</p>
+  </header>
+
+  <main class="container">
+    <p id="loading" class="state-message">Carregando coleção...</p>
+    <p id="error" class="state-message error hidden">
+      Não foi possível carregar a coleção. Verifique se a API está no ar e tente novamente.
+    </p>
+    <p id="empty" class="state-message hidden">
+      Nenhuma miniatura cadastrada ainda.
+    </p>
+
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>Coleção Hot Wheels &copy; 2026</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
